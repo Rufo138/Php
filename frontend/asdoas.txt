@@ -1,0 +1,46 @@
+$plantilla = new ControladorPlantilla();
+con esto creamos objetos en php
+instanciamos clase controlador plantilla
+
+<?php
+require_once "controladores/plantilla.controlador.php";
+$plantilla = new ControladorPlantilla();
+$plantilla->plantilla();
+
+requerimos controlador/plantilla de esa carpeta y instanciamos la clase
+
+dentro de 
+plantilla.controlador
+<?php arrancamos con eso y creamos la clase
+class ControladorPlantilla{
+    public function plantilla(){
+    include "vistas/plantilla.php"
+}
+}
+
+dentro del mismo creamos el metodo plantilla , y el public por que se puede usar en otros archivos
+
+
+
+
+
+creamos la carpeta frontend dentro de vista en platillas.php 
+
+
+instanciamos desde el index.php 
+lo llamamos desde plantilla controlador 
+
+primero a la clase en este caso ControladorPlantilla()
+
+dentro agregamos public function que instanciamos en el index
+
+class ControladorPlantilla{
+public function plantilla(){
+    include "vistas/plantilla
+}
+}
+
+
+que incluya todo lo que hay en vistas plantilla
+<base href="vistas/">
+con eso hacemos que la carpeta base sea esa

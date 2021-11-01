@@ -1,0 +1,91 @@
+
+/*=============================================
+=            Global            =
+=============================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, ol {
+    padding: 0px;
+}
+a:visited, a:link, a:focus, a:active {
+    list-style: none;
+    text-decoration: none;
+}
+.barraSuperior {
+    background: #ff66c4;
+}
+.barraSuperior a {
+    color: white;
+}
+.barraSuperior a:hover{ 
+    color: black;
+}
+
+#logotipo {
+    filter: saturate(1);
+}
+.backColor, .backColor a {
+    background: #ff66c4;
+    color: #fffd;
+}
+
+/*=============================================
+=            REDES SOCIALES           =
+=============================================*/
+.redSocial{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/*FACEBOOK*/
+.facebookColor{
+    color: white;
+    background: #46639f;
+    border-radius: 30%;
+}
+.facebookColor:hover{
+    background: white;
+    color: #46639f;
+}
+
+/*YOUTUBE*/
+.youtubeBlanco{
+    background: white;
+    color: #FF0000;
+    border-radius: 30%;
+}
+.youtubeBlanco:hover{
+    background: #FF0000;
+    color: white;
+}
+
+/*INSTAGRAM*/
+.instagramBlanco{
+    color: white;
+    background: radial-gradient(circle at 33% 100%, 
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf);
+    border-radius: 30%;
+}
+.instagramBlanco:hover{
+    background: radial-gradient(circle at 33% 100%, 
+    #515ecf 4%,
+    #fed373 30%,
+    #f15245 62%,
+    #d92e7f 85%,
+    #9b36b7
+    );
+}
+
