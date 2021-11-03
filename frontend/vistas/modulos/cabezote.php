@@ -40,14 +40,14 @@
     <div class="container">
         <div class="row" id="cabezote">
             <!-- LOGOTIPO -->
-            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logotipo">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
                 <a href="#">
-                    <img src="http://localhost/backend/vistas/img/plantilla/logo4.png" class="img-responsive" alt="Dulces Momentos general rodriguez">
+                    <img src="http://localhost/frontend/vistas/img/plantilla/logo6.png" class="img-responsive" alt="Dulces Momentos general rodriguez">
                 </a>
             </div>
             <!-- CATEGORIAS Y BUSCARDOR -->
 
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
                 <!-- BOTON CATEGORIAS -->
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 backColor" id="btnCategorias">
                     <p>CATEGORIAS
@@ -57,7 +57,7 @@
                     </p>
                 </div>
                 <!-- BUSCADOR -->
-                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-12" id="buscador">
+                <div class="input-group col-lg-8 col-md-8 col-sm-7 col-xs-12" id="buscador">
                     <input type="search" name="buscar" class="form-control" placeholder="Buscar...">
                     <span class="input-group-btn">
                         <a href="#">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <!-- CATEGORIAS -->
-        <div class="col-xs-12 backColor">
+        <div class="col-xs-12 backColor" id="categorias">
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
                 <h4><a href="#" class="pixelCategorias">Lorem ipsum</a></h4>
                 <hr>
