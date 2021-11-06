@@ -29,6 +29,7 @@
     include "modulos/cabezote.php";
     ?>
     <script src="vistas/js/cabezote.js"></script>
+    <script src="vistas/js/plantilla.js"></script>
 
 </body>
 

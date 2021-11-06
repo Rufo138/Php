@@ -21,7 +21,7 @@ a:visited, a:link, a:focus, a:active {
     background: #ff66c4;
 }
 .barraSuperior a {
-    color: white;
+    color: #ffffff;
 }
 .barraSuperior a:hover{ 
     color: black;
@@ -29,7 +29,7 @@ a:visited, a:link, a:focus, a:active {
 
 .backColor, .backColor a {
     background: #ff66c4;
-    color: #fffd;
+    color: #ffffff;
 }
 
 /*=============================================
@@ -40,14 +40,22 @@ a:visited, a:link, a:focus, a:active {
     height: 30px;
     text-align: center;
     line-height: 30px;
+    border-radius: 30%;
 }
 
 
 /*FACEBOOK*/
+.facebookBlanco{
+	color:white;
+}
+
+.facebookNegro{
+	color:black;
+}
+
 .facebookColor{
     color: white;
     background: #46639f;
-    border-radius: 30%;
 }
 .facebookColor:hover{
     background: white;
@@ -55,18 +63,76 @@ a:visited, a:link, a:focus, a:active {
 }
 
 /*YOUTUBE*/
+
 .youtubeBlanco{
+	color:red;
+	background: #fff;
+}
+
+.youtubeNegro{
+	color:black;
+}
+
+.youtubeColor{
     background: white;
     color: #FF0000;
-    border-radius: 30%;
 }
-.youtubeBlanco:hover{
+.youtubeColor:hover{
     background: #FF0000;
     color: white;
 }
 
+/*TWITTER*/
+
+.twitterColor{
+	color:white;
+	background:#0ab2e6;
+}
+
+.twitterBlanco{
+	color:white;
+}
+
+.twitterNegro{
+	color:black;
+}
+
+.twitterColor:hover{
+    color:#0ab2e6;
+	background: #ffffff;
+}
+
+/*GOOGLE PLUS*/
+
+.googleColor{
+	color:white;
+	background:#d71617;
+}
+
+.googleBlanco{
+	color:white;
+}
+
+.googleNegro{
+	color:black;
+}
+.googleColor:hover{
+	color:#d71617;
+	background:white;
+}
+
+
 /*INSTAGRAM*/
+
 .instagramBlanco{
+	color:white;
+}
+
+.instagramNegro{
+	color:black; 
+}
+
+.instagramColor{
     color: white;
     background: radial-gradient(circle at 33% 100%, 
     #fed373 4%,
@@ -74,9 +140,8 @@ a:visited, a:link, a:focus, a:active {
     #d92e7f 62%,
     #9b36b7 85%,
     #515ecf);
-    border-radius: 30%;
 }
-.instagramBlanco:hover{
+.instagramColor:hover{
     background: radial-gradient(circle at 33% 100%, 
     #515ecf 4%,
     #fed373 30%,
@@ -84,5 +149,80 @@ a:visited, a:link, a:focus, a:active {
     #d92e7f 85%,
     #9b36b7
     );
+}
+
+/*=============================================
+ERROR 404
+=============================================*/
+
+.error404{
+	color:#333;
+}
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+
+	.col-lg-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:300px;
+		text-shadow:8px 8px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	.col-md-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:200px;
+		text-shadow:6px 6px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	.col-sm-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:150px;
+		text-shadow:4px 4px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	.col-xs-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:75px;
+		text-shadow:2px 2px 1px #dadada;
+	}
+
 }
 

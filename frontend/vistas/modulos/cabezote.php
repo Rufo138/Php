@@ -5,21 +5,19 @@
             <!-- REDES SOCIALES-->
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">
                 <ul>
-                    <li>
-                        <a href="https://www.facebook.com/dulces.momentos.7777" target="_blank">
-                            <i class="fa fa-facebook redSocial facebookColor" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://youtube.com/" target="_blank">
-                            <i class="fa fa-youtube redSocial youtubeBlanco" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.instagram.com/" target="www.google.com.ar">
-                            <i class="fa fa-instagram redSocial instagramBlanco" aria-hidden="true"></i>
-                        </a>
-                    </li>
+                    <?php
+                    $social = ControladorPlantilla::ctrEstiloPlantilla();
+                    $jsonRedesSociales = json_decode($social["redesSociales"],true);
+                    
+                    foreach ($jsonRedesSociales as $key => $value) {
+
+                        echo '<li>
+                                <a href="'.$value["url"].'" target="_blank">
+                                    <i class="fa '.$value["red"].' redSocial '.$value["estilo2"].'" aria-hidden="true"></i>
+                                </a>
+                            </li>';
+                    }
+                    ?>
                 </ul>
             </div>
             <!-- REGISTRO -->
@@ -42,7 +40,7 @@
             <!-- LOGOTIPO -->
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
                 <a href="#">
-                    <img src="http://localhost/frontend/vistas/img/plantilla/logo6.png" class="img-responsive" alt="Dulces Momentos general rodriguez">
+                    <img src="http://localhost/backend/vistas/img/plantilla/logo.png" class="img-responsive" alt="Dulces Momentos general rodriguez">
                 </a>
             </div>
             <!-- CATEGORIAS Y BUSCARDOR -->
