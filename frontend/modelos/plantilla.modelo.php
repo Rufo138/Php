@@ -13,5 +13,7 @@ class ModeloPlantilla{
         return $stmt -> fetch();
         
         $stmt -> close();
+
+        $stmt = null;
     }
 }

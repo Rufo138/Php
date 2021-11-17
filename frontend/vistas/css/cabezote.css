@@ -34,6 +34,10 @@ header #btnCategorias{
 header #btnCategorias p{
 	line-height:40px;
 	margin-bottom:0px;
+	cursor: pointer;
+}
+header #btnCategorias p:hover{
+	color: black;
 }
 
 header #btnCategorias p span{
@@ -55,7 +59,7 @@ header #buscador input{
 
 header #buscador input:focus{
 	border-color:#ff66c4;
-	box-shadow: 0 1px 1px #ff66c4 inset, 0 0 8px #ff66c4;
+	box-shadow: 0 1px 1px #ff66c4 inset, 0 0 10px #ff66c4;
 	color: #ff66c4;
 }
 header #buscador button{
@@ -63,9 +67,8 @@ header #buscador button{
 	border:1px solid silver;
 	border-radius:0;
 }
-header #buscador button:hover{
+header #buscador i:hover{
 color: black;
-background: #ff66c4;
 }	
 
 header #carrito{
@@ -77,7 +80,7 @@ header #carrito button{
 	border:1px solid silver;
 	border-radius:0;
 }
-header #carrito button:hover{
+header #carrito i:hover{
 	color: black;
 	background: #ff66c4;
 }
@@ -90,10 +93,11 @@ header #carrito p{
 }
 
 header #categorias{
-	display:hidden;
+	display: none;
 	margin-top:-10px;
+	padding-bottom:15px;
 	position: relative;
-	padding-bottom:20px;
+	text-align: center;
 }
 
 header #categorias h4{
@@ -102,7 +106,8 @@ header #categorias h4{
 }
 
 header #categorias hr{
-	border:1px solid rgba(255,255,255,.3);
+	border:1px solid rgba(255, 255, 255, 0.514);
+	margin-bottom:10px;
 }
 
 
@@ -124,6 +129,13 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 
 	header #carrito{
 		padding-left:90px;
+	}
+	header #categorias{
+		margin-top:-10px;
+		padding-bottom:15px;
+		position: relative;
+		justify-content: space-around;
+		overflow: hidden;
 	}
 
 }

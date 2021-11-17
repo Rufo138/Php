@@ -39,8 +39,8 @@
         <div class="row" id="cabezote">
             <!-- LOGOTIPO -->
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="logotipo">
-                <a href="#">
-                    <img src="http://localhost/backend/vistas/img/plantilla/logo.png" class="img-responsive" alt="Dulces Momentos general rodriguez">
+                <a href="http://localhost/frontend/">
+                    <img src="http://localhost/backend/<?php echo $social["logo"]?>" class="img-responsive" alt="Dulces Momentos general rodriguez">
                 </a>
             </div>
             <!-- CATEGORIAS Y BUSCARDOR -->
@@ -77,51 +77,32 @@
             </div>
         </div>
         <!-- CATEGORIAS -->
-        <div class="col-xs-12 backColor" id="categorias">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4><a href="#" class="pixelCategorias">Lorem ipsum</a></h4>
-                <hr>
-                <ul>
-                    <li><a href="#" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixelSubCategorias">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4><a href="#" class="pixelCategorias">Lorem ipsum</a></h4>
-                <hr>
-                <ul>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4><a href="#" class="pixelCategorias">Lorem ipsum</a></h4>
-                <hr>
-                <ul>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4><a href="#" class="pixelCategorias">Lorem ipsum</a></h4>
-                <hr>
-                <ul>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                    <li><a href="" class="pixelSubCategorias">Lorem ipsum</a></li>
-                </ul>
-            </div>
+        <div class="col-xs-12 backColor " id="categorias">
+            <?php
+
+            $item = null;
+            $valor = null;
+
+            $categorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+            
+            foreach ($categorias as $key => $value) {
+                echo'<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <h4><a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a></h4>
+                <hr/>
+                <ul>';
+                $item = "id_categoria";
+                $valor = $value["id"];
+
+                $subcategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+                foreach ($subcategorias as $key => $value) {
+                    echo '
+                    <li><a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
+                }
+                echo '</ul>
+                </div>';
+            }
+            ?>
+
         </div>
     </div>
 </header>

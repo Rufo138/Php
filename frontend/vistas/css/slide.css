@@ -1,0 +1,151 @@
+/*=============================================
+SLIDE
+=============================================*/
+#slide{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+#slide ul{
+    position: relative;
+    left: 0%;
+    margin: auto;
+    height: auto;
+    width: 400%;
+    clear: both;
+    display: table;
+}
+#slide ul li{
+    position: relative;
+    float: left;
+    width: 25%;
+}
+#slide ul li img{
+    width: 100%;
+}
+#slide .slideOpcion1 img{
+    position: absolute;
+    opacity: 1;
+    /* top:15%;
+    right: 10%;
+    width: 45%; */
+}
+#slide .slideOpcion1 .textosSlide{
+    position: absolute;
+    text-align: left;
+    /* top: 20%;
+    width: 40%;
+    left: 10%; */
+}
+#slide .slideOpcion2 img{
+    position: absolute;
+    opacity: 1;
+    /* top:5%;
+    left: 15%;
+    width: 25%; */
+}
+#slide .slideOpcion2 .textosSlide{
+    position: absolute;
+    text-align: right;
+    /* width: 40%;
+    top: 15%;
+    right: 15%; */
+}
+#slide .slideOpciones h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    top: -10%;
+    color:#333;
+}
+#slide .slideOpciones h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    top: -10%;
+    color:#777;
+}
+#slide .slideOpciones h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    color:#888;
+}
+#slide .slideOpcion1 button{
+    border: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    opacity: 1;
+    top: -10%;
+}
+#slide .slideOpcion1 button:hover{
+    background: black;
+    color: white;
+    border: 0px;
+}
+#slide .slideOpcion1 span{
+    margin-left: 10px;
+}
+/*=============================================
+FLECHAS
+=============================================*/
+#slide .flechas{
+    position: absolute;
+    font-size: 2em;
+    cursor: pointer;
+    color: #fff;
+    z-index: 2;
+}
+#slide #retroceder{
+    background: #666;
+    padding: 40px 15px 40px 10px;
+    top:37%;
+    left: 0;
+    font-size: 22px;
+}
+#slide #avanzar{
+    background: #666;
+    padding: 40px 10px 40px 15px;
+    top:37%;
+    right: 0;
+    font-size: 22px;
+}
+#slide #retroceder:hover, #slide #avanzar:hover{
+    background: #777;
+    opacity: 1;
+}
+#sli#slide #retroceder:active, #slide #avanzar:active{
+    background: #444;
+}
+/*=============================================
+PAGINACION
+=============================================*/
+#slide #paginacion{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,.05);
+}
+#slide #paginacion li{
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    opacity: .5;
+    color: #fff;
+    text-shadow: 0px 0px 5px #333;
+}
+#slide #paginacion li:first-child{
+    opacity: 1;
+}

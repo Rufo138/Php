@@ -7,7 +7,6 @@ $("#btnCategorias").click(function(){
     }else{
         $("#cabezote").after($("#categorias").slideToggle("fast"))
     }
-
 })
 
 
